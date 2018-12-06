@@ -1,0 +1,31 @@
+﻿<Window x:Class="AKRemindReport.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:akRemindReport="clr-namespace:AKRemindReport"
+        Title="分线报表" Height="350" Width="525" Icon="AKRemind.ico"  Visibility="Visible" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Margin="15">
+            <StackPanel Orientation="Horizontal"  Margin="0,0,0,15">
+                <TextBlock Text="开始日期:" VerticalAlignment="Center"></TextBlock>
+                <DatePicker Margin="3,10,10,10" Name="dtStart" Width="100"/>
+                <TextBlock VerticalAlignment="Center">结束日期:</TextBlock>
+                <DatePicker Margin="3,10,10,10" Name="dtEnd" Width="100"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="选择导出条件："></TextBlock>
+                <CheckBox Name="checkBox1" Content="早餐" IsChecked="True"></CheckBox>
+                <CheckBox Name="checkBox2" Content="午餐" IsChecked="True"></CheckBox>
+                <CheckBox Name="checkBox3" Content="下午茶" IsChecked="True"></CheckBox>
+                <CheckBox Name="checkBox4" Content="晚餐" IsChecked="True"></CheckBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"  Margin="0,20,0,0">
+                <Button Content="导出Excel" Background="Chartreuse" Height="50" Width="100" Click="Button_Click"></Button>
+            </StackPanel>
+        </StackPanel>
+
+        
+        <akRemindReport:LoadingWait x:Name="_loading"  Visibility="Collapsed"/>
+     
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+2018-11-12 22:25:09.8541 | Error | AKRemindServer.AkRemind.Remind Exception error=
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 AKRemindServer.AkRemind.Remind() 位置 d:\study\external\AK\branches\v4.0\AKRemindServer\AKRemindServer\AkRemind.cs:行号 87 
+2018-11-12 22:25:01.6303 | Error | AKRemindServer.AkRemind.Remind Exception error=
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 AKRemindServer.AkRemind.Remind() 位置 d:\study\external\AK\branches\v4.0\AKRemindServer\AKRemindServer\AkRemind.cs:行号 87 

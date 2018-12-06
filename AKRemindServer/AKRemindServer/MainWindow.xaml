@@ -1,0 +1,17 @@
+﻿<Window x:Class="AKRemindServer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="分线服务端" Height="500" Width="800" Icon="AKRemind.ico" Closing="MainWindow_OnClosing" WindowStartupLocation="CenterScreen"  Loaded="MainWindow_OnLoaded">
+    <Grid Background="Black">
+        <TextBlock Name="TextBlockIP"  Text="本地默认IP为：" Foreground="Chartreuse" HorizontalAlignment="Right" FontSize="20" ></TextBlock>
+        <TextBlock Name="TextBlock8" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="20" Foreground="Chartreuse" Text="客户端连接数：0" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" Foreground="Red" Text="请勿关闭此程序" VerticalAlignment="Top"/>
+
+        <TextBlock Name="TextBlock1"  Text="正在启动服务器，请稍等..." Foreground="Chartreuse" FontSize="35" VerticalAlignment="Center" HorizontalAlignment="Center"></TextBlock>
+        
+        <TextBlock Text="提示：请先启动服务器，注意检查本地网关与服务器网关是否相同！" Foreground="Red" FontSize="15" VerticalAlignment="Bottom"  HorizontalAlignment="Left"></TextBlock>
+        <TextBlock Name="TextBlock23"  Text="" TextWrapping="Wrap" Foreground="White" HorizontalAlignment="Right" VerticalAlignment="Bottom" FontSize="10" Height="88" Margin="0,0,2,0" Width="94" ></TextBlock>
+
+        <Button Content="基本设置" Width="100" Height="40" HorizontalAlignment="Right" VerticalAlignment="Bottom" Click="Button_Click"></Button>
+    </Grid> 
+</Window>
